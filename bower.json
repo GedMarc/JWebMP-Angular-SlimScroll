@@ -18,9 +18,5 @@
   ],
   "dependencies": {
 		"angular-slimscroll": "*"
-  },
-  "ignoredDependencies": [
-        "jquery",
-        "font-awesome"
-    ]
+  }
 }

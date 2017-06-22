@@ -22,11 +22,11 @@ public class SlimScrollOptions extends JavaScriptPart
     /**
      * Width in pixels of the visible scroll area. Stretch-to-parent if not set. Default: none
      */
-    private Integer width;
+    private String width;
     /**
      * Height in pixels of the visible scroll area. Also supports auto to set the height to same as parent container. Default: 250px
      */
-    private Integer height;
+    private String height;
     /**
      * Width in pixels of the scrollbar. Default: 7px
      */
@@ -126,7 +126,7 @@ public class SlimScrollOptions extends JavaScriptPart
      *
      * @return
      */
-    public Integer getWidth()
+    public String getWidth()
     {
         return width;
     }
@@ -138,7 +138,7 @@ public class SlimScrollOptions extends JavaScriptPart
      *
      * @return
      */
-    public SlimScrollOptions setWidth(Integer width)
+    public SlimScrollOptions setWidth(String width)
     {
         this.width = width;
         return this;
@@ -149,7 +149,7 @@ public class SlimScrollOptions extends JavaScriptPart
      *
      * @return
      */
-    public Integer getHeight()
+    public String getHeight()
     {
         return height;
     }
@@ -161,7 +161,7 @@ public class SlimScrollOptions extends JavaScriptPart
      *
      * @return
      */
-    public SlimScrollOptions setHeight(Integer height)
+    public SlimScrollOptions setHeight(String height)
     {
         this.height = height;
         return this;

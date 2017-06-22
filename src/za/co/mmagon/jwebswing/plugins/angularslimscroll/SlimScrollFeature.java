@@ -29,6 +29,9 @@ public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeat
     protected void assignFunctionsToComponent()
     {
         addQuery(getComponent().getJQueryID() + "slimScroll(" + getOptions() + ");");
+        /*
+         * addQuery("$(window).resize(function() {" + "" + getComponent().getJQueryID() + "slimScroll(" + getOptions() + ");" + "" + "});");
+         */
     }
 
     @Override
