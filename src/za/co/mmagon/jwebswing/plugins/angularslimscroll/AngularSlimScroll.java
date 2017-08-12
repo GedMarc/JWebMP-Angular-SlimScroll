@@ -10,7 +10,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @since 09 Jun 2017
  */
 @ComponentInformation(name = "Angular Slim Scroll", description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
-         url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
+		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class AngularSlimScroll
 {
 
@@ -30,7 +30,7 @@ public class AngularSlimScroll
      */
     public static void applySlimScroll(ComponentHierarchyBase component, SlimScrollOptions options)
     {
-        component.addAttribute("slimscroll", options.toString());
+	    component.addAttribute("slim-scroll", options.toString());
     }
 
     /**
@@ -40,6 +40,6 @@ public class AngularSlimScroll
      */
     public static void removeSlimScroll(ComponentHierarchyBase component)
     {
-        component.addAttribute("slimscroll", null);
+	    component.addAttribute("slim-scroll", null);
     }
 }
