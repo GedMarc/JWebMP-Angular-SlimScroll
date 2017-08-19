@@ -3,15 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>za.co.mmagon</groupId>
-    <artifactId>jwebswing-angular-SlimScroll</artifactId>
+    <artifactId>jwebswing-angular-slim-scroll</artifactId>
     <version>0.0.0_0</version>
     <packaging>jar</packaging>
 
     <name>Angular Slim Scroll</name>
     <description>The JWebSwing implementation for Angular SlimScroll</description>
     <url>https://github.com/GedMarc/Angular-SlimScroll</url>
-	
-	<issueManagement>
+
+    <issueManagement>
         <system>Github</system>
         <url>https://github.com/GedMarc/Angular-SlimScroll/issues</url>
     </issueManagement>
@@ -35,7 +35,7 @@
             <id>unittest-profile</id>
             <properties>
             </properties>
-			<build>
+            <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -79,18 +79,18 @@
             <id>release-profile</id>
             <build>
                 <plugins>
-				<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-jar-plugin</artifactId>
-						<version>3.0.2</version>
-						<executions>
-						  <execution>
-							<goals>
-							  <goal>test-jar</goal>
-							</goals>
-						  </execution>
-						</executions>
-					 </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-jar-plugin</artifactId>
+                        <version>3.0.2</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>test-jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -146,11 +146,38 @@
     </properties>
 
     <build>
-        
+
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
 
-        <resources>            <resource>                <directory>jar-resources</directory>                <excludes>                    <exclude>**/*.gzip</exclude>                    <exclude>**/*.map</exclude>                    <exclude>**/*.md</exclude>                    <exclude>**/*.md</exclude>                    <exclude>**/package.json</exclude>                    <exclude>**/bower.json</exclude>                    <exclude>**/.bower.json</exclude>                    <exclude>**/.gitignore</exclude>                    <exclude>**/.jshint</exclude>                    <exclude>**/.jshint</exclude>                    <exclude>**/Gruntfile.js</exclude>                    <exclude>**/*.sh</exclude>                </excludes>            </resource>            <resource>                <directory>src</directory>                <includes>                    <include>**/*.js</include>                    <include>**/*.css</include>                    <include>**/*.min</include>                    <include>**/*.html</include>                </includes>            </resource>        </resources>
+        <resources>
+            <resource>
+                <directory>jar-resources</directory>
+                <excludes>
+                    <exclude>**/*.gzip</exclude>
+                    <exclude>**/*.map</exclude>
+                    <exclude>**/*.md</exclude>
+                    <exclude>**/*.md</exclude>
+                    <exclude>**/package.json</exclude>
+                    <exclude>**/bower.json</exclude>
+                    <exclude>**/.bower.json</exclude>
+                    <exclude>**/.gitignore</exclude>
+                    <exclude>**/.jshint</exclude>
+                    <exclude>**/.jshint</exclude>
+                    <exclude>**/Gruntfile.js</exclude>
+                    <exclude>**/*.sh</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <directory>src</directory>
+                <includes>
+                    <include>**/*.js</include>
+                    <include>**/*.css</include>
+                    <include>**/*.min</include>
+                    <include>**/*.html</include>
+                </includes>
+            </resource>
+        </resources>
 
     </build>
 
