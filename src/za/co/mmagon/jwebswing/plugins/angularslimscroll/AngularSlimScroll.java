@@ -13,33 +13,40 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class AngularSlimScroll
 {
-
-    /*
-     * Constructs a new AngularSlimScroll
-     */
-    private AngularSlimScroll()
-    {
-        //Nothing needed
-    }
-
-    /**
-     * Implements the slim scroll using angular on a given component
-     *
-     * @param component
-     * @param options
-     */
-    public static void applySlimScroll(ComponentHierarchyBase component, SlimScrollOptions options)
-    {
-	    component.addAttribute("slim-scroll", options.toString());
-    }
-
-    /**
-     * Removes slim scroll from a given component
-     *
-     * @param component
-     */
-    public static void removeSlimScroll(ComponentHierarchyBase component)
-    {
-	    component.addAttribute("slim-scroll", null);
-    }
+	
+	/*
+	 * Constructs a new AngularSlimScroll
+	 */
+	private AngularSlimScroll()
+	{
+		//Nothing needed
+	}
+	
+	/**
+	 * Implements the slim scroll using angular on a given component
+	 *
+	 * @param component
+	 * @param options
+	 */
+	public static void applySlimScroll(ComponentHierarchyBase component, SlimScrollOptions options)
+	{
+		if (options != null)
+		{
+			component.addAttribute("slim-scroll", options.toString());
+		}
+		else
+		{
+			component.addAttribute("slim-scroll", null);
+		}
+	}
+	
+	/**
+	 * Removes slim scroll from a given component
+	 *
+	 * @param component
+	 */
+	public static void removeSlimScroll(ComponentHierarchyBase component)
+	{
+		component.addAttribute("slim-scroll", null);
+	}
 }
