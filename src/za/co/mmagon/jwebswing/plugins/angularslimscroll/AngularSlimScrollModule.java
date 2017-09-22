@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularSlimScrollModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularSlimScrollModule
-     */
-    public AngularSlimScrollModule()
-    {
-        super("ui.slimscroll");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularSlimScrollModule
+	 */
+	public AngularSlimScrollModule()
+	{
+		super("ui.slimscroll");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }

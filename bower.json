@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-		"angular-slimscroll": "*"
+    "angular-slimscroll": "*"
   }
 }
