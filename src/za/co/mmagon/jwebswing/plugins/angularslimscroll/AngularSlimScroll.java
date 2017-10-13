@@ -13,7 +13,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class AngularSlimScroll
 {
-	
+	private static final String SlimScrollAttributeName = "slim-scroll";
 	/*
 	 * Constructs a new AngularSlimScroll
 	 */
@@ -32,11 +32,11 @@ public class AngularSlimScroll
 	{
 		if (options != null)
 		{
-			component.addAttribute("slim-scroll", options.toString());
+			component.addAttribute(SlimScrollAttributeName, options.toString());
 		}
 		else
 		{
-			component.addAttribute("slim-scroll", null);
+			component.addAttribute(SlimScrollAttributeName, null);
 		}
 	}
 	
@@ -47,6 +47,6 @@ public class AngularSlimScroll
 	 */
 	public static void removeSlimScroll(ComponentHierarchyBase component)
 	{
-		component.addAttribute("slim-scroll", null);
+		component.addAttribute(SlimScrollAttributeName, null);
 	}
 }
