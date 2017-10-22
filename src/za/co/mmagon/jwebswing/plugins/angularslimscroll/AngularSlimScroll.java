@@ -14,6 +14,7 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 public class AngularSlimScroll
 {
 	private static final String SlimScrollAttributeName = "slim-scroll";
+
 	/*
 	 * Constructs a new AngularSlimScroll
 	 */
@@ -21,7 +22,7 @@ public class AngularSlimScroll
 	{
 		//Nothing needed
 	}
-	
+
 	/**
 	 * Implements the slim scroll using angular on a given component
 	 *
@@ -39,7 +40,7 @@ public class AngularSlimScroll
 			component.addAttribute(SlimScrollAttributeName, null);
 		}
 	}
-	
+
 	/**
 	 * Removes slim scroll from a given component
 	 *
