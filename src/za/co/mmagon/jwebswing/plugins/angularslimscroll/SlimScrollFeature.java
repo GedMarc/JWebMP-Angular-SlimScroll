@@ -14,9 +14,9 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeature>
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new SlimScrollFeature
 	 */
@@ -24,16 +24,13 @@ public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeat
 	{
 		super("SlimScrollFeature", component);
 	}
-	
+
 	@Override
 	protected void assignFunctionsToComponent()
 	{
 		addQuery(getComponent().getJQueryID() + "slimScroll(" + getOptions() + ");");
-		/*
-	     * addQuery("$(window).resize(function() {" + "" + getComponent().getJQueryID() + "slimScroll(" + getOptions() + ");" + "" + "});");
-         */
 	}
-	
+
 	@Override
 	public SlimScrollOptions getOptions()
 	{
