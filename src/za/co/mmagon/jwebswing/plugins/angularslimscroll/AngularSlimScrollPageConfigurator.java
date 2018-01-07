@@ -25,9 +25,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download"
 ) class AngularSlimScrollPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularSlimScrollPageConfigurator
 	 */
@@ -35,21 +35,21 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 	{
 		//Nothing needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
-			
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
+
 			page.getBody().addJavaScriptReference(AngularSlimScrollReferencePool.SlimScrollReference.getJavaScriptReference());
 			page.getBody().addJavaScriptReference(AngularSlimScrollReferencePool.AngularSlimScroll.getJavaScriptReference());
-			
+
 			page.getAngular().getAngularModules().add(new AngularSlimScrollModule());
 		}
-		
+
 		return page;
 	}
 }

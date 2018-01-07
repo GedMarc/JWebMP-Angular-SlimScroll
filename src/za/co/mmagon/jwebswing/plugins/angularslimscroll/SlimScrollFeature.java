@@ -4,6 +4,8 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * Implements the Slim Scroll option via JavaScript instead of angular
  *
@@ -28,7 +30,7 @@ public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeat
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "slimScroll(" + getOptions() + ");");
+		addQuery(getComponent().getJQueryID() + "slimScroll(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
 	}
 
 	@Override
