@@ -9,11 +9,12 @@ import za.co.mmagon.jwebswing.plugins.ComponentInformation;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Angular Slim Scroll", description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
+@ComponentInformation(name = "Angular Slim Scroll",
+		description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class AngularSlimScroll
 {
-	private static final String SlimScrollAttributeName = "slim-scroll";
+	private static final String SlimScrollAttributeName = "slimscroll";
 
 	/*
 	 * Constructs a new AngularSlimScroll

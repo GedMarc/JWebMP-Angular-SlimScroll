@@ -22,8 +22,8 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
 		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-slimscroll",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download"
-) class AngularSlimScrollPageConfigurator extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download") class AngularSlimScrollPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -44,10 +44,16 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
 
-			page.getBody().addJavaScriptReference(AngularSlimScrollReferencePool.SlimScrollReference.getJavaScriptReference());
-			page.getBody().addJavaScriptReference(AngularSlimScrollReferencePool.AngularSlimScroll.getJavaScriptReference());
+			page.getBody()
+			    .addJavaScriptReference(AngularSlimScrollReferencePool.SlimScrollReference.getJavaScriptReference()
+			                                                                              .setSortOrder(30));
+			page.getBody()
+			    .addJavaScriptReference(AngularSlimScrollReferencePool.AngularSlimScroll.getJavaScriptReference()
+			                                                                            .setSortOrder(31));
 
-			page.getAngular().getAngularModules().add(new AngularSlimScrollModule());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new AngularSlimScrollModule());
 		}
 
 		return page;

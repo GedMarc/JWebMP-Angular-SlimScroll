@@ -4,6 +4,8 @@ import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 
+import javax.validation.constraints.NotNull;
+
 import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
 
 /**
@@ -12,9 +14,11 @@ import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRAC
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-@ComponentInformation(name = "Slim Scroll JS", description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
+@ComponentInformation(name = "Slim Scroll JS",
+		description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
-public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeature>
+public class SlimScrollFeature
+		extends Feature<SlimScrollOptions, SlimScrollFeature>
 {
 
 	private static final long serialVersionUID = 1L;
@@ -34,6 +38,7 @@ public class SlimScrollFeature extends Feature<SlimScrollOptions, SlimScrollFeat
 	}
 
 	@Override
+	@NotNull
 	public SlimScrollOptions getOptions()
 	{
 		if (super.getOptions() == null)

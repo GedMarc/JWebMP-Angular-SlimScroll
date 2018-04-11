@@ -11,9 +11,10 @@ import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class SlimScrollOptions extends JavaScriptPart
+public class SlimScrollOptions<J extends SlimScrollOptions<J>>
+		extends JavaScriptPart<J>
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * Prevent directive from watching the option object
@@ -48,7 +49,8 @@ public class SlimScrollOptions extends JavaScriptPart
 	 */
 	private Integer distance;
 	/**
-	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML element is passed,
+	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML
+	 * element is passed,
 	 * slimScroll defaults to offsetTop of this element. Default: top.
 	 */
 	private TopOrBottom start;
@@ -77,7 +79,8 @@ public class SlimScrollOptions extends JavaScriptPart
 	 */
 	private Integer scrollTo;
 	/**
-	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example: $(element).slimScroll({ scrollBy:
+	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example:
+	 * $(element).slimScroll({ scrollBy:
 	 * '60px' });
 	 */
 	private Integer scrollBy;
@@ -89,7 +92,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
 	 */
 	private Integer touchScrollStep;
-	
+
 	/*
 	 * Constructs a new SlimScrollOptions
 	 */
@@ -97,7 +100,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		//Nothing needed
 	}
-	
+
 	/**
 	 * Prevent directive from watching the option object
 	 *
@@ -107,7 +110,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return noWatch;
 	}
-	
+
 	/**
 	 * Prevent directive from watching the option object
 	 *
@@ -120,7 +123,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.noWatch = noWatch;
 		return this;
 	}
-	
+
 	/**
 	 * Width in pixels of the visible scroll area. Stretch-to-parent if not set. Default: none
 	 *
@@ -130,7 +133,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return width;
 	}
-	
+
 	/**
 	 * Width in pixels of the visible scroll area. Stretch-to-parent if not set. Default: none
 	 *
@@ -143,7 +146,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.width = width;
 		return this;
 	}
-	
+
 	/**
 	 * Height in pixels of the visible scroll area. Also supports auto to set the height to same as parent container. Default: 250px
 	 *
@@ -153,7 +156,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return height;
 	}
-	
+
 	/**
 	 * Height in pixels of the visible scroll area. Also supports auto to set the height to same as parent container. Default: 250px
 	 *
@@ -166,7 +169,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.height = height;
 		return this;
 	}
-	
+
 	/**
 	 * Width in pixels of the scrollbar. Default: 7px
 	 *
@@ -176,7 +179,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return size;
 	}
-	
+
 	/**
 	 * Width in pixels of the scrollbar. Default: 7px
 	 *
@@ -189,7 +192,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.size = size;
 		return this;
 	}
-	
+
 	/**
 	 * left or right. Sets the position of the scrollbar. Default: right
 	 *
@@ -199,7 +202,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return position;
 	}
-	
+
 	/**
 	 * left or right. Sets the position of the scrollbar. Default: right
 	 *
@@ -212,7 +215,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.position = position;
 		return this;
 	}
-	
+
 	/**
 	 * Color in hex of the scrollbar. Default: #000000
 	 *
@@ -222,7 +225,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return color;
 	}
-	
+
 	/**
 	 * Color in hex of the scrollbar. Default: #000000
 	 *
@@ -235,7 +238,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.color = color;
 		return this;
 	}
-	
+
 	/**
 	 * Disables scrollbar hide. Default: false
 	 *
@@ -245,7 +248,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return alwaysVisible;
 	}
-	
+
 	/**
 	 * Disables scrollbar hide. Default: false
 	 *
@@ -258,7 +261,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.alwaysVisible = alwaysVisible;
 		return this;
 	}
-	
+
 	/**
 	 * Distance in pixels from the edge of the parent element where scrollbar should appear. It is used together with position property. Default:1px
 	 *
@@ -268,7 +271,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return distance;
 	}
-	
+
 	/**
 	 * Distance in pixels from the edge of the parent element where scrollbar should appear. It is used together with position property. Default:1px
 	 *
@@ -281,9 +284,10 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.distance = distance;
 		return this;
 	}
-	
+
 	/**
-	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML element is passed,
+	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML
+	 * element is passed,
 	 * slimScroll defaults to offsetTop of this element. Default: top.
 	 *
 	 * @return
@@ -292,9 +296,10 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return start;
 	}
-	
+
 	/**
-	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML element is passed,
+	 * top or bottom or $(selector) - defines initial position of the scrollbar. When set to bottom it automatically scrolls to the bottom of the scrollable container. When HTML
+	 * element is passed,
 	 * slimScroll defaults to offsetTop of this element. Default: top.
 	 *
 	 * @param start
@@ -306,7 +311,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.start = start;
 		return this;
 	}
-	
+
 	/**
 	 * Integer value for mouse wheel delta. Default: 20
 	 *
@@ -316,7 +321,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return wheelStep;
 	}
-	
+
 	/**
 	 * Integer value for mouse wheel delta. Default: 20
 	 *
@@ -329,7 +334,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.wheelStep = wheelStep;
 		return this;
 	}
-	
+
 	/**
 	 * Enables scrollbar rail. Default: false
 	 *
@@ -339,7 +344,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return railVisible;
 	}
-	
+
 	/**
 	 * Enables scrollbar rail. Default: false
 	 *
@@ -352,7 +357,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.railVisible = railVisible;
 		return this;
 	}
-	
+
 	/**
 	 * Sets scrollbar rail color, Default: #333333
 	 *
@@ -362,7 +367,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return railColor;
 	}
-	
+
 	/**
 	 * Sets scrollbar rail color, Default: #333333
 	 *
@@ -375,7 +380,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.railColor = railColor;
 		return this;
 	}
-	
+
 	/**
 	 * Sets scrollbar rail opacity. Default: 0.2
 	 *
@@ -385,7 +390,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return railOpacity;
 	}
-	
+
 	/**
 	 * Sets scrollbar rail opacity. Default: 0.2
 	 *
@@ -398,7 +403,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.railOpacity = railOpacity;
 		return this;
 	}
-	
+
 	/**
 	 * Checks if mouse wheel should scroll page when bar reaches top or bottom of the container. When set to true is scrolls the page.Default: false
 	 *
@@ -408,7 +413,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return allowPageScroll;
 	}
-	
+
 	/**
 	 * Checks if mouse wheel should scroll page when bar reaches top or bottom of the container. When set to true is scrolls the page.Default: false
 	 *
@@ -421,7 +426,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.allowPageScroll = allowPageScroll;
 		return this;
 	}
-	
+
 	/**
 	 * Jumps to the specified scroll value. Can be called on any element with slimScroll already enabled. Example: $(element).slimScroll({ scrollTo: '50px' });
 	 *
@@ -431,7 +436,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return scrollTo;
 	}
-	
+
 	/**
 	 * Jumps to the specified scroll value. Can be called on any element with slimScroll already enabled. Example: $(element).slimScroll({ scrollTo: '50px' });
 	 *
@@ -444,9 +449,10 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.scrollTo = scrollTo;
 		return this;
 	}
-	
+
 	/**
-	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example: $(element).slimScroll({ scrollBy:
+	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example:
+	 * $(element).slimScroll({ scrollBy:
 	 * '60px' });
 	 *
 	 * @return
@@ -455,9 +461,10 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return scrollBy;
 	}
-	
+
 	/**
-	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example: $(element).slimScroll({ scrollBy:
+	 * Increases/decreases current scroll value by specified amount (positive or negative). Can be called on any element with slimScroll already enabled. Example:
+	 * $(element).slimScroll({ scrollBy:
 	 * '60px' });
 	 *
 	 * @param scrollBy
@@ -469,7 +476,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.scrollBy = scrollBy;
 		return this;
 	}
-	
+
 	/**
 	 * Disables scrollbar auto fade. When set to true scrollbar doesn't disappear after some time when mouse is over the slimscroll div.Default: false
 	 *
@@ -479,7 +486,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return disableFadeOut;
 	}
-	
+
 	/**
 	 * Disables scrollbar auto fade. When set to true scrollbar doesn't disappear after some time when mouse is over the slimscroll div.Default: false
 	 *
@@ -492,7 +499,7 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.disableFadeOut = disableFadeOut;
 		return this;
 	}
-	
+
 	/**
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
 	 *
@@ -502,7 +509,7 @@ public class SlimScrollOptions extends JavaScriptPart
 	{
 		return touchScrollStep;
 	}
-	
+
 	/**
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
 	 *
@@ -515,11 +522,12 @@ public class SlimScrollOptions extends JavaScriptPart
 		this.touchScrollStep = touchScrollStep;
 		return this;
 	}
-	
+
 	@Override
 	public String toString()
 	{
-		return super.toString().replaceAll("\\s*\\n\\s*", "");
+		return super.toString()
+		            .replaceAll("\\s*\\n\\s*", "");
 	}
 
 }
