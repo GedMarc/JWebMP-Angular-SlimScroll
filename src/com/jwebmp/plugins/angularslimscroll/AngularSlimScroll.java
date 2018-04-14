@@ -1,7 +1,7 @@
-package za.co.mmagon.jwebswing.plugins.angularslimscroll;
+package com.jwebmp.plugins.angularslimscroll;
 
-import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
+import com.jwebmp.base.ComponentHierarchyBase;
+import com.jwebmp.plugins.ComponentInformation;
 
 /**
  * Adds and removes the slim scroll attribute from angular components

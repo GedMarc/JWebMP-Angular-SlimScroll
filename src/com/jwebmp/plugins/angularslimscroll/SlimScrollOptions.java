@@ -1,9 +1,9 @@
-package za.co.mmagon.jwebswing.plugins.angularslimscroll;
+package com.jwebmp.plugins.angularslimscroll;
 
-import za.co.mmagon.jwebswing.generics.LeftOrRight;
-import za.co.mmagon.jwebswing.generics.TopOrBottom;
-import za.co.mmagon.jwebswing.htmlbuilder.css.colours.ColourCSSImpl;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.generics.LeftOrRight;
+import com.jwebmp.generics.TopOrBottom;
+import com.jwebmp.htmlbuilder.css.colours.ColourCSSImpl;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * All the options available for slim scroll
