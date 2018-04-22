@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.angularslimscroll;
 
-import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import com.jwebmp.htmlbuilder.css.colours.ColourCSSImpl;
 import org.junit.jupiter.api.Test;
 
@@ -25,7 +25,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class SlimScrollFeatureTest
-		extends BaseTestClass
+
 {
 
 	public SlimScrollFeatureTest()
@@ -35,14 +35,14 @@ public class SlimScrollFeatureTest
 	@Test
 	public void testSomeMethod()
 	{
-		SlimScrollFeature ssf = new SlimScrollFeature(getInstance().getBody());
+		SlimScrollFeature ssf = new SlimScrollFeature(new Page().getBody());
 		System.out.println(ssf.renderJavascript());
 	}
 
 	@Test
 	public void testSomeMethod2()
 	{
-		SlimScrollFeature ssf = new SlimScrollFeature(getInstance().getBody());
+		SlimScrollFeature ssf = new SlimScrollFeature(new Page().getBody());
 		ssf.getOptions()
 		   .setRailVisible(true);
 		ssf.getOptions()
