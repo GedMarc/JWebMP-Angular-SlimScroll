@@ -90,8 +90,10 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 	private Boolean disableFadeOut;
 	/**
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
+	 * <p>
+	 * Changed default to 50 so mobile scrolling isn't completely awfuil
 	 */
-	private Integer touchScrollStep;
+	private Integer touchScrollStep = -50;
 
 	/*
 	 * Constructs a new SlimScrollOptions
@@ -502,6 +504,8 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 
 	/**
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
+	 * <p>
+	 * Changed default to 50 so mobile scrolling isn't completely awfuil
 	 *
 	 * @return
 	 */
@@ -512,6 +516,8 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 
 	/**
 	 * Allows to set different sensitivity for touch scroll events. Negative number inverts scroll direction.Default: 200
+	 * <p>
+	 * Changed default to 50 so mobile scrolling isn't completely awfuil
 	 *
 	 * @param touchScrollStep
 	 *
