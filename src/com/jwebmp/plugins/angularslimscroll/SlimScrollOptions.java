@@ -93,7 +93,7 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 	 * <p>
 	 * Changed default to 50 so mobile scrolling isn't completely awfuil
 	 */
-	private Integer touchScrollStep = -50;
+	private Integer touchScrollStep;
 
 	/*
 	 * Constructs a new SlimScrollOptions
