@@ -11,7 +11,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularSlimScrollReferencePool implements ReferencePool
+enum AngularSlimScrollReferencePool
+		implements ReferencePool
 {
 	SlimScrollReference(new JavascriptReference("SlimScroll", 1.1, "bower_components/slimScroll/jquery.slimscroll.js"), null),
 	AngularSlimScroll(new JavascriptReference("AngularSlimScroll", 1.1, "bower_components/angular-slimscroll/angular-slimscroll.js"), null);
@@ -45,18 +46,6 @@ enum AngularSlimScrollReferencePool implements ReferencePool
 	}
 
 	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-
-	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
@@ -66,6 +55,18 @@ enum AngularSlimScrollReferencePool implements ReferencePool
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 
 	/**

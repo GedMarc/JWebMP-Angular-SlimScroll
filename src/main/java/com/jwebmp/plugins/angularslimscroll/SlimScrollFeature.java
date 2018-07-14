@@ -23,7 +23,7 @@ import com.jwebmp.plugins.ComponentInformation;
 
 import javax.validation.constraints.NotNull;
 
-import static com.jwebmp.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+import static com.jwebmp.utilities.StaticStrings.*;
 
 /**
  * Implements the Slim Scroll option via JavaScript instead of angular
