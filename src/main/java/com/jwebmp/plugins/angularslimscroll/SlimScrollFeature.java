@@ -21,8 +21,6 @@ import com.jwebmp.Feature;
 import com.jwebmp.base.ComponentHierarchyBase;
 import com.jwebmp.plugins.ComponentInformation;
 
-import javax.validation.constraints.NotNull;
-
 import static com.jwebmp.utilities.StaticStrings.*;
 
 /**
@@ -55,7 +53,7 @@ public class SlimScrollFeature
 	}
 
 	@Override
-	@NotNull
+
 	public SlimScrollOptions getOptions()
 	{
 		if (super.getOptions() == null)
