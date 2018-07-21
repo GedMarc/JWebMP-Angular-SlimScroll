@@ -17,11 +17,11 @@
 
 package com.jwebmp.plugins.angularslimscroll;
 
-import com.jwebmp.Feature;
-import com.jwebmp.base.ComponentHierarchyBase;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.Feature;
+import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.plugins.ComponentInformation;
 
-import static com.jwebmp.utilities.StaticStrings.*;
+import static com.jwebmp.core.utilities.StaticStrings.*;
 
 /**
  * Implements the Slim Scroll option via JavaScript instead of angular

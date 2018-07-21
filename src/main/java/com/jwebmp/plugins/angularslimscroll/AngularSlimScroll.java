@@ -1,7 +1,7 @@
 package com.jwebmp.plugins.angularslimscroll;
 
-import com.jwebmp.base.ComponentHierarchyBase;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * Adds and removes the slim scroll attribute from angular components

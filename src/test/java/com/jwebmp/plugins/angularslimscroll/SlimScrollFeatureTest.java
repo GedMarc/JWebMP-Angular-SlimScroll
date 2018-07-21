@@ -17,8 +17,8 @@
 
 package com.jwebmp.plugins.angularslimscroll;
 
-import com.jwebmp.Page;
-import com.jwebmp.htmlbuilder.css.colours.ColourCSSImpl;
+import com.jwebmp.core.Page;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourCSSImpl;
 import org.junit.jupiter.api.Test;
 
 /**

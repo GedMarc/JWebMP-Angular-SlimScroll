@@ -1,9 +1,9 @@
 package com.jwebmp.plugins.angularslimscroll;
 
-import com.jwebmp.generics.LeftOrRight;
-import com.jwebmp.generics.TopOrBottom;
-import com.jwebmp.htmlbuilder.css.colours.ColourCSSImpl;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.generics.LeftOrRight;
+import com.jwebmp.core.generics.TopOrBottom;
+import com.jwebmp.core.htmlbuilder.css.colours.ColourCSSImpl;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 
 /**
  * All the options available for slim scroll
