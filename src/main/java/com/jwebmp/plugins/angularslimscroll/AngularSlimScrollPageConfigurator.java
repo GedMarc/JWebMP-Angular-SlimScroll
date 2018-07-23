@@ -18,10 +18,10 @@
 package com.jwebmp.plugins.angularslimscroll;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -39,12 +39,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
 		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-slimscroll",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download") class AngularSlimScrollPageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download")
+public class AngularSlimScrollPageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularSlimScrollPageConfigurator
 	 */
@@ -67,10 +65,6 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 			page.getBody()
 			    .addJavaScriptReference(AngularSlimScrollReferencePool.AngularSlimScroll.getJavaScriptReference()
 			                                                                            .setSortOrder(31));
-
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularSlimScrollModule());
 		}
 
 		return page;
