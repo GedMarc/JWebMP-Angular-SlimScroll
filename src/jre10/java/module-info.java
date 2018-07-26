@@ -10,4 +10,5 @@ module com.jwebmp.plugins.angularslimscroll {
 	provides IPageConfigurator with AngularSlimScrollPageConfigurator;
 	provides IAngularModule with AngularSlimScrollModule;
 
+	opens com.jwebmp.plugins.angularslimscroll to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
