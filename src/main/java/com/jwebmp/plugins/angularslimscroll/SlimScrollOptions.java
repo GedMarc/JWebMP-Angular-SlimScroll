@@ -94,6 +94,10 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 	 * Changed default to 50 so mobile scrolling isn't completely awfuil
 	 */
 	private Integer touchScrollStep;
+	/**
+	 * To destroy the slimscroll
+	 */
+	private Boolean destroy;
 
 	/*
 	 * Constructs a new SlimScrollOptions
@@ -536,4 +540,23 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 		            .replaceAll("\\s*\\n\\s*", "");
 	}
 
+	/**
+	 * If the instance must be destroyed
+	 * @return
+	 */
+	public Boolean getDestroy()
+	{
+		return destroy;
+	}
+
+	/**
+	 * Destroys an instance
+	 * @param destroy
+	 * @return
+	 */
+	public SlimScrollOptions setDestroy(Boolean destroy)
+	{
+		this.destroy = destroy;
+		return this;
+	}
 }
