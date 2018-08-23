@@ -19,6 +19,7 @@ package com.jwebmp.plugins.angularslimscroll;
 
 import com.jwebmp.core.Feature;
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.html.interfaces.GlobalFeatures;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 import static com.jwebmp.core.utilities.StaticStrings.*;
@@ -33,7 +34,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 		description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
 		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
 public class SlimScrollFeature
-		extends Feature<SlimScrollOptions, SlimScrollFeature>
+		extends Feature<GlobalFeatures, SlimScrollOptions, SlimScrollFeature>
 {
 
 	private static final long serialVersionUID = 1L;
