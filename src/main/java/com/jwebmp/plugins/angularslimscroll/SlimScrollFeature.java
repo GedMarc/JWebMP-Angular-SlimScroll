@@ -32,7 +32,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  */
 @ComponentInformation(name = "Slim Scroll JS",
 		description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
-		url = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll")
+		url = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll")
 public class SlimScrollFeature
 		extends Feature<GlobalFeatures, SlimScrollOptions, SlimScrollFeature>
 {

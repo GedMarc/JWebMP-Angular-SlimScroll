@@ -36,14 +36,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "scrolling, ui,web ui, framework",
 		pluginSubtitle = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar",
 		pluginSourceUrl = "https://github.com/rochal/jQuery-slimScroll",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-SlimScroll",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll",
 		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
 		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-slimscroll",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download")
 public class AngularSlimScrollPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularSlimScrollPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
