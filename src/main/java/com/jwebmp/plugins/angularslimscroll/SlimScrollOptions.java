@@ -15,7 +15,7 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 		extends JavaScriptPart<J>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * Prevent directive from watching the option object
 	 */
@@ -542,6 +542,7 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 
 	/**
 	 * If the instance must be destroyed
+	 *
 	 * @return
 	 */
 	public Boolean getDestroy()
@@ -551,7 +552,9 @@ public class SlimScrollOptions<J extends SlimScrollOptions<J>>
 
 	/**
 	 * Destroys an instance
+	 *
 	 * @param destroy
+	 *
 	 * @return
 	 */
 	public SlimScrollOptions setDestroy(Boolean destroy)

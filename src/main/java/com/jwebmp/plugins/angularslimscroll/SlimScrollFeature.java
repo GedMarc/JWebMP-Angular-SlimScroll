@@ -37,7 +37,6 @@ public class SlimScrollFeature
 		extends Feature<GlobalFeatures, SlimScrollOptions, SlimScrollFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new SlimScrollFeature

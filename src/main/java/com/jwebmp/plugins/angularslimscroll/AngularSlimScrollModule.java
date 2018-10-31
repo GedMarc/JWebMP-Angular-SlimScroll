@@ -31,7 +31,6 @@ public class AngularSlimScrollModule
 		implements IAngularModule<AngularSlimScrollModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularSlimScrollModule
