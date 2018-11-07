@@ -30,8 +30,6 @@ public class AngularSlimScrollModule
 		extends AngularModuleBase
 		implements IAngularModule<AngularSlimScrollModule>
 {
-
-
 	/*
 	 * Constructs a new AngularSlimScrollModule
 	 */
@@ -44,5 +42,16 @@ public class AngularSlimScrollModule
 	public String renderFunction()
 	{
 		return null;
+	}
+
+	/**
+	 * If this page configurator is enabled
+	 *
+	 * @return if the configuration must run
+	 */
+	@Override
+	public boolean enabled()
+	{
+		return AngularSlimScrollPageConfigurator.isEnabled();
 	}
 }
