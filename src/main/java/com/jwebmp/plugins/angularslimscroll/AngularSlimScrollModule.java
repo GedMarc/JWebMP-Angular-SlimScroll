@@ -18,7 +18,6 @@
 package com.jwebmp.plugins.angularslimscroll;
 
 import com.jwebmp.core.base.angular.modules.AngularModuleBase;
-import com.jwebmp.core.base.angular.services.IAngularModule;
 
 /**
  * The module getting loaded into angular
@@ -27,8 +26,7 @@ import com.jwebmp.core.base.angular.services.IAngularModule;
  * @since 08 Jun 2017
  */
 public class AngularSlimScrollModule
-		extends AngularModuleBase
-		implements IAngularModule<AngularSlimScrollModule>
+		extends AngularModuleBase<AngularSlimScrollModule>
 {
 	/*
 	 * Constructs a new AngularSlimScrollModule
