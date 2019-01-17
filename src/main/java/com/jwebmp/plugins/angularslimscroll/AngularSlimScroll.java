@@ -6,7 +6,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
 /**
  * Adds and removes the slim scroll attribute from angular components
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 @ComponentInformation(name = "Angular Slim Scroll",

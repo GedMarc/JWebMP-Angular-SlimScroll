@@ -8,7 +8,7 @@ import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
 /**
  * All the options available for slim scroll
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 public class SlimScrollOptions<J extends SlimScrollOptions<J>>
