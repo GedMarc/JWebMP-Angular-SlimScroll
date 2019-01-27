@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularslimscroll.AngularSlimScrollModule;
-import com.jwebmp.plugins.angularslimscroll.AngularSlimScrollPageConfigurator;
-import com.jwebmp.plugins.angularslimscroll.implementations.AngularSlimScrollExclusionsModule;
-
 module com.jwebmp.plugins.angularslimscroll {
 	exports com.jwebmp.plugins.angularslimscroll;
 
@@ -14,11 +6,11 @@ module com.jwebmp.plugins.angularslimscroll {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularSlimScrollPageConfigurator;
-	provides IAngularModule with AngularSlimScrollModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularslimscroll.AngularSlimScrollPageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularslimscroll.AngularSlimScrollModule;
 
-	provides IGuiceScanJarExclusions with AngularSlimScrollExclusionsModule;
-	provides IGuiceScanModuleExclusions with AngularSlimScrollExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularslimscroll.implementations.AngularSlimScrollExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularslimscroll.implementations.AngularSlimScrollExclusionsModule;
 
 	opens com.jwebmp.plugins.angularslimscroll to com.fasterxml.jackson.databind, com.jwebmp.core;
 }
