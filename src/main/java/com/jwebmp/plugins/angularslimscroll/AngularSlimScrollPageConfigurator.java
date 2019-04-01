@@ -93,8 +93,7 @@ public class AngularSlimScrollPageConfigurator
 			AngularPageConfigurator.setRequired(true);
 
 			page.getBody()
-			    .addJavaScriptReference(AngularSlimScrollReferencePool.SlimScrollReference.getJavaScriptReference()
-			                                                                              .setSortOrder(30));
+			    .addJavaScriptReference(AngularSlimScrollReferencePool.SlimScrollReference.getJavaScriptReference());
 			page.getBody()
 			    .addJavaScriptReference(AngularSlimScrollReferencePool.AngularSlimScroll.getJavaScriptReference()
 			                                                                            .setSortOrder(31));
