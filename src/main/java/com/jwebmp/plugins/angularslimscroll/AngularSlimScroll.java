@@ -1,6 +1,7 @@
 package com.jwebmp.plugins.angularslimscroll;
 
 import com.jwebmp.core.base.ComponentHierarchyBase;
+import com.jwebmp.core.base.interfaces.IComponentHierarchyBase;
 import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
@@ -30,15 +31,15 @@ public class AngularSlimScroll
 	 * @param component
 	 * @param options
 	 */
-	public static void applySlimScroll(ComponentHierarchyBase component, SlimScrollOptions options)
+	public static void applySlimScroll(IComponentHierarchyBase<?,?> component, SlimScrollOptions<?> options)
 	{
 		if (options != null)
 		{
-			component.addAttribute(SlimScrollAttributeName, options.toString());
+			component.asAttributeBase().addAttribute(SlimScrollAttributeName, options.toString());
 		}
 		else
 		{
-			component.addAttribute(SlimScrollAttributeName, null);
+			component.asAttributeBase().addAttribute(SlimScrollAttributeName, null);
 		}
 	}
 
@@ -47,8 +48,8 @@ public class AngularSlimScroll
 	 *
 	 * @param component
 	 */
-	public static void removeSlimScroll(ComponentHierarchyBase component)
+	public static void removeSlimScroll(IComponentHierarchyBase<?,?> component)
 	{
-		component.addAttribute(SlimScrollAttributeName, null);
+		component.asAttributeBase().addAttribute(SlimScrollAttributeName, null);
 	}
 }

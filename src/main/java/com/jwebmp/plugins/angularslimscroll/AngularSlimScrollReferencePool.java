@@ -14,9 +14,9 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum AngularSlimScrollReferencePool
 		implements ReferencePool
 {
-	SlimScrollReference(new JavascriptReference("SlimScroll", 1.1, "bower_components/slimScroll/jquery.slimscroll.js").setPriority(RequirementsPriority.Third)
+	SlimScrollReference(new JavascriptReference("SlimScroll", 1.38, "bower_components/slimScroll/jquery.slimscroll.js").setPriority(RequirementsPriority.Third)
 	                                                                                                                  .setSortOrder(100), null),
-	AngularSlimScroll(new JavascriptReference("AngularSlimScroll", 1.1, "bower_components/angular-slimscroll/angular-slimscroll.js"), null);
+	AngularSlimScroll(new JavascriptReference("AngularSlimScroll", 1.38, "bower_components/angular-slimscroll/angular-slimscroll.js"), null);
 	/**
 	 * Any sub data
 	 */

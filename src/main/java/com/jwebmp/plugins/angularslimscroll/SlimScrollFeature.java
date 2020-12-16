@@ -35,10 +35,9 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
 		description = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar.",
 		url = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll")
 public class SlimScrollFeature
-		extends Feature<GlobalFeatures, SlimScrollOptions, SlimScrollFeature>
+		extends Feature<GlobalFeatures, SlimScrollOptions<?>, SlimScrollFeature>
 {
-
-
+	
 	/*
 	 * Constructs a new SlimScrollFeature
 	 */
@@ -46,22 +45,23 @@ public class SlimScrollFeature
 	{
 		super("SlimScrollFeature", component);
 	}
-
+	
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "slimScroll(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
+		addQuery(getComponent().asBase()
+		                       .getJQueryID() + "slimScroll(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON);
 	}
-
+	
 	@Override
-
-	public SlimScrollOptions getOptions()
+	
+	public SlimScrollOptions<?> getOptions()
 	{
 		if (super.getOptions() == null)
 		{
-			setOptions(new SlimScrollOptions());
+			setOptions(new SlimScrollOptions<>());
 		}
 		return super.getOptions();
 	}
-
+	
 }

@@ -1,3 +1,5 @@
+import com.jwebmp.plugins.angularslimscroll.implementations.AngularSlimScrollModuleInclusions;
+
 module com.jwebmp.plugins.angularslimscroll {
 	exports com.jwebmp.plugins.angularslimscroll;
 
@@ -10,6 +12,7 @@ module com.jwebmp.plugins.angularslimscroll {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularslimscroll.AngularSlimScrollModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularslimscroll.implementations.AngularSlimScrollExclusionsModule;
+	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions with AngularSlimScrollModuleInclusions;
 
 	opens com.jwebmp.plugins.angularslimscroll to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

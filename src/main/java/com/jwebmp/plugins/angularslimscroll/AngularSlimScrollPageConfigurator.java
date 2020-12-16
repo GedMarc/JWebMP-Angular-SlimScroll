@@ -20,6 +20,7 @@ package com.jwebmp.plugins.angularslimscroll;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -31,17 +32,22 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "SlimScroll",
 		pluginDescription = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar - similar to the one Facebook and Google started using in their products recently. slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over. User can drag the scrollbar or use mouse-wheel to change the scroll value.",
-		pluginUniqueName = "jwebswing-slimscroll",
+		pluginUniqueName = "slimscroll",
 		pluginVersion = "1.3.8",
 		pluginCategories = "scrolling, ui,web ui, framework",
 		pluginSubtitle = "slimScroll is a small jQuery plugin that transforms any div into a scrollable area with a nice scrollbar",
 		pluginSourceUrl = "https://github.com/rochal/jQuery-slimScroll",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-SlimScroll",
-		pluginIconUrl = "bower_components/bootstrap/bootstrapicon.jpg",
-		pluginIconImageUrl = "bower_components/bootstrap/bootstraplogo.jpg",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.npmjs.com/package/angular-slimscroll",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularSlimScroll.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-angular-slim-scroll",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-slim-scroll",
+		pluginModuleName = "com.jwebmp.plugins.angularslimscroll",
+		pluginStatus = PluginStatus.Released
+)
 public class AngularSlimScrollPageConfigurator
 		implements IPageConfigurator<AngularSlimScrollPageConfigurator>
 {
