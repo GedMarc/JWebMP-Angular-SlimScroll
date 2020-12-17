@@ -12,7 +12,7 @@ public class AngularSlimScrollModuleInclusions implements IGuiceScanModuleInclus
 	public @NotNull Set<String> includeModules()
 	{
 		Set<String> set = new HashSet<>();
-		set.add("com.jwebmp.plugins.jqueryui");
+		set.add("com.jwebmp.plugins.angularslimscroll");
 		return set;
 	}
 }
