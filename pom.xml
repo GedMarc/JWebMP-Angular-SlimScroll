@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.angular</groupId>
     <artifactId>jwebmp-angular-slim-scroll</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>Angular Slim Scroll</name>
     <description>The JWebSwing implementation for Angular SlimScroll</description>
     <url>https://github.com/GedMarc/Angular-SlimScroll</url>
